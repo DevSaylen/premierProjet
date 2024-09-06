@@ -1,6 +1,10 @@
+body{
+    background-color: greenyellow;
+}
+
 p{
     font-size: 45px;
-    color: yellowgreen;
+    color: blue;
 }
 
 h1{
@@ -12,7 +16,7 @@ h2{
 }
 
 h3{
-    color: chartreuse;
+    color: black;
 }
 
 .maDiv{
@@ -26,6 +30,9 @@ td, th{
     padding: 10px;
     background-color: gray;
     color: white;
+    font-family: monospace;
+    font-weight: 500;
+    font-size: 25px;
 }
 
 /* COMMENTAIRE DANS LE CSS */
@@ -33,4 +40,8 @@ td, th{
 table{
     border-collapse: collapse;
     margin-top: 50px;
+}
+
+tr{
+    text-align: center;
 }
