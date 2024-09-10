@@ -1,0 +1,58 @@
+h2 {
+    /* Ici c'est pour modifier la couleur de la police */
+    color:  #2e535d;
+    font-weight: bold;
+    border: 1px solid hsl(208, 98%, 68%);
+    /* Ici c'est pour colorier le cadre autour du texte (surligner) */
+    background-color: hsl(208, 98%, 68%);
+}
+
+.userInter {
+    color: hsl(208, 56%, 46%);
+    /* Ici on met la police en gras */
+    font-weight: bold;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+tr, td, th {
+    border: 2px solid black;
+    padding: 3px;
+    font-weight: 600;
+}
+
+.gras {
+    font-weight: bold;
+}
+
+input, label {
+    font-weight: 500;
+}
+
+.colorUser {
+    color: hsl(208, 56%, 46%);
+}
+
+.cNumber {
+    color: #2c2996;
+}
+
+img {
+    width: 350px;
+}
+
+.dog {
+    float: right;
+    margin-top: -2.3%;
+}
+
+/* Avec cette pseudo-class on colorie le fond de tous les 2 tr  */
+tr:nth-child(2n) {
+    background-color: #cec8c8;
+}
+
+div {
+    margin-top: 2px;
+}
