@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice Multiplication</title>
+</head>
+<body>
+
+    <form>
+        <input type="number" id="nbr">
+        <button id="btn">Valider</button>
+    </form>
+
+    <button id="btn2">Pile / Face</button>
+    
+
+    <script>
+        
+        //quand je click sur le bouton
+        const btn = document.getElementById("btn");
+        const nbr = document.getElementById("nbr");
+
+        btn.addEventListener("click", function(){
+        //ça lance le calcul(multiplication) du chiffre de l'input de 0 à 10
+            for(i = 0; i <= 10; i++){
+                console.log(`${nbr.value} fois ${i} est égal à ${nbr.value * i}`)
+            }
+        })
+
+        /* 
+            // Symbole de verification
+
+            On vérifie l'égaliter sans la verification de type
+            de a à b
+            // a == b
+
+            on verifie que a est supérieur à b
+            a > b
+
+            on verifie que a est supérieur ou égal à b
+            a >= b
+
+            on verifie que a est inférieur à b
+            a < b
+
+            on verifie que a est inférieur ou égal à b
+            a <= b
+
+            on vérifie que a n'est pas égal à b
+            a != b
+
+            on vérifie que a est strictement égale à b
+            lors de cette verification on verifie le type 
+            a === b 
+        */
+
+        // pile ou face
+        // on ajoute un bouton et ça affiche pile ou face selon un nombre aléatoirement pile ou face.
+        // dans un console.log
+
+        btn2.addEventListener("click", function(){
+            let pileOuFace = Math.random() > 0.5 ? "Pile" : "Face"
+            console.log(pileOuFace)
+        })
+
+    </script>
+
+</body>
+</html>
